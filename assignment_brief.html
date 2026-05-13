@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Intern Assignment — E-Commerce Data Pipeline</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap');
+  :root {
+    --bg: #F7F5F0; --surface: #FFFFFF; --text: #1A1A18; --muted: #6B6960;
+    --accent: #2D5A3D; --accent-light: #EAF3DE; --accent-mid: #639922;
+    --warn: #BA7517; --warn-light: #FAEEDA;
+    --info: #185FA5; --info-light: #E6F1FB; --border: #E0DDD5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.7; padding: 48px 24px 80px; }
+  .page { max-width: 740px; margin: 0 auto; }
+  .header { border-bottom: 2px solid var(--text); padding-bottom: 24px; margin-bottom: 40px; }
+  .tag { display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); background: var(--accent-light); border: 1px solid var(--accent-mid); padding: 3px 10px; border-radius: 3px; margin-bottom: 16px; }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-size: 40px; font-weight: 600; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 12px; }
+  .subtitle { color: var(--muted); font-size: 13px; }
+  .meta-row { display: flex; gap: 32px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+  .meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .meta-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .meta-value { font-size: 13px; font-weight: 500; }
+  h2 { font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 600; margin: 44px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  p { margin-bottom: 10px; color: var(--muted); font-size: 13px; }
+  code { display: block; background: #F0EDE6; padding: 10px 12px; border-radius: 4px; font-size: 12px; color: var(--text); line-height: 1.8; white-space: pre; margin: 10px 0; }
+  .task { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 18px 22px; margin-bottom: 12px; }
+  .task.bonus { border-left-color: var(--warn); }
+  .task-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+  .task-num { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .task-title { font-weight: 500; font-size: 14px; }
+  .bonus-badge { font-size: 10px; padding: 2px 8px; background: var(--warn-light); color: var(--warn); border: 1px solid var(--warn); border-radius: 3px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .task ul { list-style: none; padding: 0; margin: 6px 0 0; }
+  .task ul li { position: relative; padding-left: 16px; margin-bottom: 5px; font-size: 13px; color: var(--muted); }
+  .task ul li::before { content: '›'; position: absolute; left: 0; color: var(--accent-mid); font-weight: 500; }
+  .file-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin: 14px 0; }
+  .file-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+  .file-name { font-weight: 500; font-size: 13px; margin-bottom: 4px; }
+  .file-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .tip-box { background: var(--info-light); border: 1px solid #B5D4F4; border-radius: 6px; padding: 12px 16px; font-size: 13px; color: var(--info); margin: 16px 0; }
+  ul.plain { list-style: none; padding: 0; margin: 12px 0; }
+  ul.plain li { display: flex; align-items: center; gap: 10px; padding: 9px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 7px; font-size: 13px; color: var(--muted); }
+  ul.plain li::before { content: ''; width: 18px; height: 18px; border: 1.5px solid var(--border); border-radius: 4px; flex-shrink: 0; }
+  .footer { margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="tag">Python Intern Assignment</div>
+    <h1>E-Commerce<br>Data Pipeline</h1>
+    <p class="subtitle">Read two messy datasets, clean them, and produce three output files.</p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">2 days</span></div>
+      <div class="meta-item"><span class="meta-label">Level</span><span class="meta-value">Intermediate</span></div>
+      <div class="meta-item"><span class="meta-label">Stack</span><span class="meta-value">VS Code + pandas</span></div>
+    </div>
+  </div>
+
+  <h2>Setup</h2>
+  <p>Create a virtual environment, install pandas, and place both CSV files in your project folder.</p>
+  <code>python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac / Linux
+pip install pandas
+pip freeze > requirements.txt</code>
+
+  <h2>Datasets</h2>
+  <p>Both files contain intentional quality issues — part of the assignment is finding them.</p>
+  <div class="file-grid">
+    <div class="file-card">
+      <div class="file-name">orders.csv</div>
+      <div class="file-desc">200 rows. Sales transactions — product, quantity, price, date, status, country.</div>
+    </div>
+    <div class="file-card">
+      <div class="file-name">customers.csv</div>
+      <div class="file-desc">50 rows. Customer records — name, email, segment, lifetime value.</div>
+    </div>
+  </div>
+  <div class="tip-box">Start by loading the data and calling .info() and .isnull().sum() before touching anything.</div>
+
+  <h2>Tasks</h2>
+
+  <div class="task">
+    <div class="task-header"><span class="task-num">Task 01</span><span class="task-title">Load & explore</span></div>
+    <ul>
+      <li>Read both CSVs into DataFrames and inspect them</li>
+      <li>List the data quality issues you find in a comment</li>
+    </ul>
+  </div>
+
+  <div class="task">
+    <div class="task-header"><span class="task-num">Task 02</span><span class="task-title">Build a DataCleaner class</span></div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:8px;">The script has a skeleton with docstrings. Implement each method — figure out which pandas tools you need.</p>
+    <ul>
+      <li>Standardize text columns (casing, whitespace)</li>
+      <li>Unify country name variants</li>
+      <li>Parse date columns with mixed formats</li>
+      <li>Fill nulls with a strategy that makes sense per column</li>
+      <li>Remove duplicates</li>
+      <li>Add a revenue column (price × quantity × discount)</li>
+      <li>Every method must return self for chaining</li>
+    </ul>
+  </div>
+
+  <div class="task">
+    <div class="task-header"><span class="task-num">Task 03</span><span class="task-title">Clean both datasets</span></div>
+    <ul>
+      <li>Run your cleaner on orders, then on customers</li>
+      <li>Print a report before and after each</li>
+      <li>Save to cleaned_orders.csv and cleaned_customers.csv</li>
+    </ul>
+  </div>
+
+  <div class="task">
+    <div class="task-header"><span class="task-num">Task 04</span><span class="task-title">Merge</span></div>
+    <ul>
+      <li>Join the two cleaned files on customer_id — keep all orders</li>
+      <li>Save to merged_report.csv</li>
+    </ul>
+  </div>
+
+  <div class="task bonus">
+    <div class="task-header"><span class="task-num">Task 05</span><span class="task-title">Analyse</span><span class="bonus-badge">Bonus</span></div>
+    <ul>
+      <li>Total revenue per product category</li>
+      <li>Country with the most orders</li>
+      <li>Average order value per customer segment</li>
+      <li>Month with the highest revenue</li>
+      <li>Top 5 customers by total revenue</li>
+    </ul>
+  </div>
+
+  <h2>Deliverables</h2>
+  <ul class="plain">
+    <li>ecommerce_pipeline.py — complete and commented</li>
+    <li>cleaned_orders.csv</li>
+    <li>cleaned_customers.csv</li>
+    <li>merged_report.csv</li>
+    <li>requirements.txt</li>
+  </ul>
+
+  <div class="footer">
+    <span>E-Commerce Data Pipeline — Intern Assignment</span>
+    <span>Read the script skeleton before starting.</span>
+  </div>
+
+</div>
+</body>
+</html>

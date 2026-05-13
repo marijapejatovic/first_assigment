@@ -1,0 +1,201 @@
+order_id,customer_id,product_name,category,quantity,unit_price,discount_pct,order_date,status,country,revenue
+ORD-0001,1048,Wireless Mouse,Electronics,1,29.99,15.0,2023-08-05,Pending,United States,25.49
+ORD-0002,1033,Headphones Pro,Electronics,4,199.99,0.0,2023-03-01,Pending,Germany,799.96
+ORD-0003,1049,Desk Lamp,Furniture,4,39.99,0.0,2023-11-12,Pending,United States,159.96
+ORD-0004,1007,Standing Desk,Furniture,2,449.0,0.0,2023-04-06,Completed,France,898.0
+ORD-0005,1019,Laptop Pro 15,Electronics,4,1299.99,10.0,2023-11-12,Completed,United Kingdom,4679.96
+ORD-0006,1006,Headphones Pro,Electronics,2,199.99,15.0,2023-02-02,Pending,Germany,339.98
+ORD-0007,1045,Mechanical Keyboard,Electronics,3,119.99,0.0,2023-12-06,Pending,Germany,359.97
+ORD-0008,1018,Standing Desk,Furniture,5,449.0,15.0,2023-06-04,Unknown,France,1908.25
+ORD-0009,1018,Monitor 27inch,Electronics,1,329.0,0.0,2023-11-12,Cancelled,France,329.0
+ORD-0010,1017,Monitor 27inch,Electronics,2,329.0,15.0,2023-11-12,Unknown,United States,559.3
+ORD-0011,1033,Headphones Pro,Electronics,4,199.99,10.0,2023-12-07,Pending,United States,719.96
+ORD-0012,1025,Standing Desk,Furniture,2,449.0,0.0,2023-11-12,Completed,France,898.0
+ORD-0013,1008,Desk Lamp,Furniture,1,39.99,15.0,2023-11-12,Pending,France,33.99
+ORD-0014,1041,USB-C Hub,Electronics,5,49.99,0.0,2023-11-12,Completed,Germany,249.95
+ORD-0015,1002,Standing Desk,Furniture,5,449.0,0.0,2023-01-09,Cancelled,United Kingdom,2245.0
+ORD-0016,1047,USB-C Hub,Electronics,2,49.99,0.0,2023-11-12,Completed,United States,99.98
+ORD-0017,1034,Standing Desk,Furniture,2,449.0,15.0,2023-11-12,Completed,Germany,763.3
+ORD-0018,1034,Desk Lamp,Furniture,2,39.99,15.0,2023-11-12,Cancelled,United Kingdom,67.98
+ORD-0019,1005,Laptop Pro 15,Electronics,5,1299.99,10.0,2023-11-12,Pending,United States,5849.96
+ORD-0020,1014,Laptop Pro 15,Electronics,3,1299.99,0.0,2023-08-09,Pending,United Kingdom,3899.97
+ORD-0021,1007,Headphones Pro,Electronics,4,199.99,0.0,2023-11-12,Cancelled,Germany,799.96
+ORD-0022,1026,Mechanical Keyboard,Electronics,1,119.99,15.0,2023-11-12,Completed,United States,101.99
+ORD-0023,1018,Ergonomic Chair,Furniture,2,389.0,10.0,2023-05-08,Cancelled,United States,700.2
+ORD-0024,1049,Desk Lamp,Furniture,1,39.99,0.0,2023-11-12,Completed,United States,39.99
+ORD-0025,1017,Ergonomic Chair,Furniture,4,389.0,0.0,2023-11-12,Completed,France,1556.0
+ORD-0026,1038,Desk Lamp,Furniture,4,39.99,0.0,2023-10-04,Pending,United States,159.96
+ORD-0027,1033,Laptop Pro 15,Electronics,5,1299.99,5.0,2023-11-12,Completed,United States,6174.95
+ORD-0028,1006,Ergonomic Chair,Furniture,4,389.0,0.0,2023-08-10,Completed,Unknown,1556.0
+ORD-0029,1026,USB-C Hub,Electronics,2,49.99,15.0,2023-11-12,Pending,Germany,84.98
+ORD-0030,1035,Wireless Mouse,Electronics,1,29.99,5.0,2023-11-12,Completed,United States,28.49
+ORD-0031,1046,Wireless Mouse,Electronics,2,29.99,0.0,2023-06-05,Unknown,United Kingdom,59.98
+ORD-0032,1017,Desk Lamp,Furniture,1,39.99,15.0,2023-10-09,Completed,United States,33.99
+ORD-0033,1044,USB-C Hub,Electronics,3,49.99,10.0,2023-11-12,Cancelled,Germany,134.97
+ORD-0034,1001,Laptop Pro 15,Electronics,1,1299.99,15.0,2023-11-12,Pending,United States,1104.99
+ORD-0035,1005,Standing Desk,Furniture,4,449.0,10.0,2023-11-12,Completed,United States,1616.4
+ORD-0036,1003,Laptop Pro 15,Electronics,3,1299.99,10.0,2023-05-09,Cancelled,United States,3509.97
+ORD-0037,1050,Laptop Pro 15,Electronics,3,1299.99,0.0,2023-08-11,Completed,France,3899.97
+ORD-0038,1002,Standing Desk,Furniture,2,449.0,0.0,2023-11-12,Completed,France,898.0
+ORD-0039,1003,Notebook Set,Stationery,2,12.5,0.0,2023-11-12,Completed,France,25.0
+ORD-0040,1026,Mechanical Keyboard,Electronics,3,119.99,0.0,2023-08-04,Completed,Germany,359.97
+ORD-0041,1008,USB-C Hub,Electronics,3,49.99,15.0,2023-11-12,Cancelled,United States,127.47
+ORD-0042,1028,USB-C Hub,Electronics,1,49.99,0.0,2023-11-12,Cancelled,France,49.99
+ORD-0043,1034,Headphones Pro,Electronics,2,199.99,0.0,2023-11-12,Cancelled,United States,399.98
+ORD-0044,1021,Ergonomic Chair,Furniture,3,389.0,5.0,2023-11-12,Cancelled,Unknown,1108.65
+ORD-0045,1036,Desk Lamp,Furniture,3,39.99,15.0,2023-11-07,Cancelled,Germany,101.97
+ORD-0046,1019,Standing Desk,Furniture,5,449.0,10.0,2023-11-12,Completed,Germany,2020.5
+ORD-0047,1031,Monitor 27inch,Electronics,4,329.0,5.0,2023-11-12,Pending,United Kingdom,1250.2
+ORD-0048,1049,Wireless Mouse,Electronics,3,29.99,10.0,2023-11-12,Cancelled,United States,80.97
+ORD-0049,1027,Standing Desk,Furniture,1,449.0,0.0,2023-11-12,Completed,United Kingdom,449.0
+ORD-0050,1050,Notebook Set,Stationery,4,12.5,5.0,2023-05-04,Completed,United States,47.5
+ORD-0051,1009,Desk Lamp,Furniture,4,39.99,0.0,2023-08-09,Completed,United Kingdom,159.96
+ORD-0052,1029,Headphones Pro,Electronics,3,199.99,0.0,2023-11-12,Cancelled,United Kingdom,599.97
+ORD-0053,1018,USB-C Hub,Electronics,2,49.99,0.0,2023-09-11,Unknown,Germany,99.98
+ORD-0054,1025,Monitor 27inch,Electronics,3,329.0,10.0,2023-05-02,Completed,Germany,888.3
+ORD-0055,1027,Notebook Set,Stationery,3,12.5,10.0,2023-11-12,Completed,Germany,33.75
+ORD-0056,1049,Laptop Pro 15,Electronics,5,1299.99,5.0,2023-01-08,Cancelled,Germany,6174.95
+ORD-0057,1018,Desk Lamp,Furniture,5,199.99,0.0,2023-08-10,Unknown,Germany,999.95
+ORD-0058,1038,Notebook Set,Stationery,2,199.99,0.0,2023-05-08,Completed,France,399.98
+ORD-0059,1014,Standing Desk,Furniture,4,449.0,0.0,2023-09-01,Cancelled,France,1796.0
+ORD-0060,1004,USB-C Hub,Electronics,4,49.99,0.0,2023-11-12,Completed,United Kingdom,199.96
+ORD-0061,1010,Laptop Pro 15,Electronics,1,1299.99,0.0,2023-11-12,Completed,Unknown,1299.99
+ORD-0062,1039,Ergonomic Chair,Furniture,4,389.0,15.0,2023-11-12,Cancelled,United States,1322.6
+ORD-0063,1044,Standing Desk,Furniture,3,449.0,0.0,2023-01-10,Pending,Unknown,1347.0
+ORD-0064,1045,Ergonomic Chair,Furniture,1,389.0,10.0,2023-11-12,Pending,United States,350.1
+ORD-0065,1005,Wireless Mouse,Electronics,5,29.99,0.0,2023-12-01,Cancelled,France,149.95
+ORD-0066,1028,Mechanical Keyboard,Electronics,1,119.99,5.0,2023-11-12,Unknown,United States,113.99
+ORD-0067,1018,Headphones Pro,Electronics,5,199.99,0.0,2023-11-12,Cancelled,Unknown,999.95
+ORD-0068,1002,USB-C Hub,Electronics,4,49.99,0.0,2023-11-12,Cancelled,France,199.96
+ORD-0069,1001,Monitor 27inch,Electronics,3,329.0,0.0,2023-11-12,Pending,United Kingdom,987.0
+ORD-0070,1029,Notebook Set,Stationery,4,12.5,10.0,2023-11-12,Unknown,United Kingdom,45.0
+ORD-0071,1034,Ergonomic Chair,Furniture,3,389.0,15.0,2023-12-10,Unknown,United Kingdom,991.95
+ORD-0072,1047,Monitor 27inch,Electronics,4,329.0,0.0,2023-09-05,Pending,United States,1316.0
+ORD-0073,1049,Standing Desk,Furniture,2,449.0,0.0,2023-11-12,Pending,Unknown,898.0
+ORD-0074,1046,Ergonomic Chair,Furniture,3,389.0,0.0,2023-06-06,Pending,United States,1167.0
+ORD-0075,1001,Desk Lamp,Furniture,3,39.99,15.0,2023-11-12,Unknown,United States,101.97
+ORD-0076,1032,Standing Desk,Furniture,1,449.0,0.0,2023-04-08,Completed,France,449.0
+ORD-0077,1049,Standing Desk,Furniture,5,449.0,0.0,2023-08-02,Completed,United Kingdom,2245.0
+ORD-0078,1037,Desk Lamp,Furniture,4,39.99,5.0,2023-10-08,Cancelled,Germany,151.96
+ORD-0079,1012,Ergonomic Chair,Furniture,2,389.0,0.0,2023-03-11,Completed,Germany,778.0
+ORD-0080,1045,Headphones Pro,Electronics,4,199.99,0.0,2023-08-01,Pending,Germany,799.96
+ORD-0081,1015,USB-C Hub,Electronics,5,49.99,15.0,2023-11-12,Completed,United Kingdom,212.46
+ORD-0082,1008,Wireless Mouse,Electronics,1,29.99,0.0,2023-11-12,Pending,United Kingdom,29.99
+ORD-0083,1003,USB-C Hub,Electronics,5,49.99,10.0,2023-11-12,Completed,Unknown,224.96
+ORD-0084,1037,Laptop Pro 15,1299.99,1,1299.99,0.0,2023-11-12,Completed,Germany,1299.99
+ORD-0085,1031,Mechanical Keyboard,Electronics,3,119.99,0.0,2023-11-12,Unknown,United States,359.97
+ORD-0086,1049,Standing Desk,Furniture,3,449.0,5.0,2023-11-12,Pending,France,1279.65
+ORD-0087,1030,Monitor 27inch,Electronics,1,329.0,0.0,2023-11-12,Completed,United Kingdom,329.0
+ORD-0088,1009,Mechanical Keyboard,Electronics,4,119.99,0.0,2023-07-01,Pending,United Kingdom,479.96
+ORD-0089,1020,Wireless Mouse,Electronics,1,29.99,15.0,2023-11-12,Pending,United States,25.49
+ORD-0090,1046,Wireless Mouse,Electronics,4,29.99,0.0,2023-11-12,Completed,United Kingdom,119.96
+ORD-0091,1013,Mechanical Keyboard,Electronics,4,119.99,0.0,2023-11-12,Completed,France,479.96
+ORD-0092,1019,Wireless Mouse,Electronics,3,29.99,0.0,2023-11-07,Pending,United States,89.97
+ORD-0093,1036,Mechanical Keyboard,Electronics,2,119.99,5.0,2023-11-12,Cancelled,France,227.98
+ORD-0094,1021,Ergonomic Chair,Furniture,2,389.0,10.0,2023-08-07,Cancelled,United States,700.2
+ORD-0095,1029,Notebook Set,Stationery,2,12.5,5.0,2023-11-12,Cancelled,United States,23.75
+ORD-0096,1017,Standing Desk,Furniture,4,449.0,0.0,2023-05-11,Completed,United Kingdom,1796.0
+ORD-0097,1003,Monitor 27inch,Electronics,5,329.0,5.0,2023-11-12,Unknown,United Kingdom,1562.75
+ORD-0098,1029,USB-C Hub,Electronics,2,49.99,15.0,2023-11-12,Completed,United States,84.98
+ORD-0099,1016,Monitor 27inch,Electronics,1,329.0,0.0,2023-12-06,Cancelled,United States,329.0
+ORD-0100,1044,Standing Desk,Furniture,2,449.0,0.0,2023-11-12,Cancelled,Unknown,898.0
+ORD-0101,1019,Mechanical Keyboard,Electronics,3,119.99,5.0,2023-11-12,Completed,United Kingdom,341.97
+ORD-0102,1020,Monitor 27inch,Electronics,5,329.0,0.0,2023-11-12,Pending,United Kingdom,1645.0
+ORD-0103,1002,Ergonomic Chair,Furniture,4,389.0,10.0,2023-11-12,Pending,Germany,1400.4
+ORD-0104,1039,Headphones Pro,Electronics,1,199.99,10.0,2023-11-12,Pending,Germany,179.99
+ORD-0105,1029,USB-C Hub,49.99,2,49.99,15.0,2023-11-12,Completed,Germany,84.98
+ORD-0106,1035,USB-C Hub,Electronics,3,49.99,15.0,2023-06-07,Pending,United States,127.47
+ORD-0107,1008,USB-C Hub,Electronics,2,49.99,0.0,2023-11-12,Pending,France,99.98
+ORD-0108,1001,Ergonomic Chair,Furniture,4,389.0,0.0,2023-12-09,Completed,France,1556.0
+ORD-0109,1031,USB-C Hub,49.99,5,49.99,5.0,2023-12-11,Completed,Germany,237.45
+ORD-0110,1042,Headphones Pro,Electronics,2,199.99,15.0,2023-11-12,Unknown,Germany,339.98
+ORD-0111,1030,USB-C Hub,Electronics,4,49.99,0.0,2023-08-02,Completed,France,199.96
+ORD-0112,1042,Desk Lamp,Furniture,4,39.99,10.0,2023-11-12,Completed,France,143.96
+ORD-0113,1016,USB-C Hub,Electronics,1,49.99,15.0,2023-07-06,Unknown,United Kingdom,42.49
+ORD-0114,1030,Desk Lamp,Furniture,3,39.99,0.0,2023-09-07,Pending,United States,119.97
+ORD-0115,1014,Laptop Pro 15,Electronics,1,1299.99,0.0,2023-08-06,Completed,Unknown,1299.99
+ORD-0116,1010,Ergonomic Chair,Furniture,2,389.0,0.0,2023-11-12,Completed,Germany,778.0
+ORD-0117,1021,Wireless Mouse,29.99,1,29.99,0.0,2023-12-01,Pending,Unknown,29.99
+ORD-0118,1050,Notebook Set,Stationery,5,12.5,0.0,2023-03-12,Unknown,United Kingdom,62.5
+ORD-0119,1042,Ergonomic Chair,Furniture,5,389.0,0.0,2023-11-12,Pending,United Kingdom,1945.0
+ORD-0120,1006,Notebook Set,Stationery,4,12.5,15.0,2023-11-12,Unknown,United States,42.5
+ORD-0121,1034,Headphones Pro,Electronics,5,199.99,10.0,2023-11-12,Cancelled,Unknown,899.96
+ORD-0122,1027,Wireless Mouse,Electronics,5,29.99,15.0,2023-11-12,Unknown,Germany,127.46
+ORD-0123,1010,Wireless Mouse,Electronics,3,29.99,5.0,2023-11-12,Pending,France,85.47
+ORD-0124,1036,Wireless Mouse,Electronics,1,29.99,5.0,2023-11-12,Cancelled,United States,28.49
+ORD-0125,1019,Wireless Mouse,Electronics,4,29.99,0.0,2023-11-12,Cancelled,United States,119.96
+ORD-0126,1036,Ergonomic Chair,Furniture,2,389.0,15.0,2023-08-08,Completed,France,661.3
+ORD-0127,1043,Notebook Set,Stationery,5,12.5,0.0,2023-11-12,Completed,Unknown,62.5
+ORD-0128,1043,USB-C Hub,Electronics,3,49.99,0.0,2023-06-01,Completed,Unknown,149.97
+ORD-0129,1030,Laptop Pro 15,Electronics,1,1299.99,15.0,2023-07-09,Cancelled,France,1104.99
+ORD-0130,1004,Headphones Pro,Electronics,5,199.99,0.0,2023-05-01,Completed,Unknown,999.95
+ORD-0131,1008,Mechanical Keyboard,Electronics,5,119.99,5.0,2023-09-07,Pending,United Kingdom,569.95
+ORD-0132,1026,Headphones Pro,Electronics,4,199.99,10.0,2023-10-11,Completed,Germany,719.96
+ORD-0133,1001,Ergonomic Chair,Furniture,2,389.0,0.0,2023-10-05,Cancelled,United States,778.0
+ORD-0134,1026,Desk Lamp,Furniture,2,39.99,10.0,2023-11-12,Cancelled,United States,71.98
+ORD-0135,1019,Wireless Mouse,Electronics,3,199.99,10.0,2023-11-12,Cancelled,France,539.97
+ORD-0136,1007,Headphones Pro,Electronics,4,199.99,0.0,2023-12-12,Completed,France,799.96
+ORD-0137,1005,Notebook Set,Stationery,3,12.5,15.0,2023-08-06,Cancelled,United States,31.88
+ORD-0138,1007,Monitor 27inch,Electronics,3,329.0,15.0,2023-11-12,Completed,Germany,838.95
+ORD-0139,1049,Wireless Mouse,Electronics,2,29.99,0.0,2023-11-12,Unknown,Unknown,59.98
+ORD-0140,1005,Headphones Pro,Electronics,3,199.99,0.0,2023-11-11,Completed,United Kingdom,599.97
+ORD-0141,1029,Headphones Pro,199.99,1,199.99,0.0,2023-03-09,Pending,United Kingdom,199.99
+ORD-0142,1036,Wireless Mouse,Electronics,5,29.99,10.0,2023-11-12,Unknown,Unknown,134.95
+ORD-0143,1029,Headphones Pro,Electronics,2,199.99,0.0,2023-11-12,Completed,United States,399.98
+ORD-0144,1029,Wireless Mouse,Electronics,5,29.99,15.0,2023-02-03,Pending,United Kingdom,127.46
+ORD-0145,1005,USB-C Hub,Electronics,4,49.99,5.0,2023-11-12,Completed,France,189.96
+ORD-0146,1043,USB-C Hub,Electronics,5,49.99,0.0,2023-11-03,Completed,Unknown,249.95
+ORD-0147,1025,Notebook Set,Stationery,2,12.5,10.0,2023-03-12,Pending,United Kingdom,22.5
+ORD-0148,1024,Desk Lamp,Furniture,1,39.99,15.0,2023-11-12,Cancelled,United States,33.99
+ORD-0149,1007,Mechanical Keyboard,Electronics,2,119.99,0.0,2023-05-03,Completed,Germany,239.98
+ORD-0150,1025,Desk Lamp,Furniture,1,39.99,15.0,2023-11-12,Completed,Unknown,33.99
+ORD-0151,1044,Headphones Pro,Electronics,2,199.99,15.0,2023-02-08,Cancelled,France,339.98
+ORD-0152,1024,Mechanical Keyboard,Electronics,2,119.99,10.0,2023-10-04,Unknown,Germany,215.98
+ORD-0153,1039,USB-C Hub,Electronics,4,49.99,10.0,2023-11-12,Completed,Germany,179.96
+ORD-0154,1006,Monitor 27inch,Electronics,5,329.0,0.0,2023-11-12,Completed,Germany,1645.0
+ORD-0155,1002,Standing Desk,Furniture,4,449.0,0.0,2023-11-12,Unknown,France,1796.0
+ORD-0156,1046,Notebook Set,Stationery,1,12.5,0.0,2023-01-04,Cancelled,United States,12.5
+ORD-0157,1040,USB-C Hub,49.99,4,49.99,15.0,2023-11-12,Unknown,United Kingdom,169.97
+ORD-0158,1050,Standing Desk,Furniture,5,449.0,15.0,2023-11-12,Cancelled,United States,1908.25
+ORD-0159,1035,Notebook Set,12.5,5,12.5,5.0,2023-04-02,Unknown,Unknown,59.38
+ORD-0160,1037,Standing Desk,Furniture,3,449.0,5.0,2023-11-12,Cancelled,Germany,1279.65
+ORD-0161,1031,Monitor 27inch,329.0,1,329.0,10.0,2023-11-12,Completed,France,296.1
+ORD-0162,1050,Laptop Pro 15,Electronics,3,1299.99,0.0,2023-12-02,Pending,United States,3899.97
+ORD-0163,1041,Monitor 27inch,Electronics,5,329.0,0.0,2023-06-11,Unknown,United Kingdom,1645.0
+ORD-0164,1021,Mechanical Keyboard,Electronics,1,119.99,0.0,2023-02-04,Pending,United States,119.99
+ORD-0165,1023,Desk Lamp,Furniture,4,39.99,0.0,2023-11-12,Pending,Germany,159.96
+ORD-0166,1025,USB-C Hub,Electronics,1,49.99,0.0,2023-11-12,Cancelled,United Kingdom,49.99
+ORD-0167,1028,Monitor 27inch,Electronics,5,329.0,0.0,2023-11-12,Cancelled,United States,1645.0
+ORD-0168,1029,Monitor 27inch,Electronics,1,329.0,0.0,2023-11-12,Pending,Germany,329.0
+ORD-0169,1028,Monitor 27inch,Electronics,4,329.0,0.0,2023-11-12,Cancelled,Unknown,1316.0
+ORD-0170,1010,Wireless Mouse,Electronics,4,29.99,0.0,2023-11-12,Completed,United States,119.96
+ORD-0171,1037,Standing Desk,449.0,1,449.0,0.0,2023-12-11,Cancelled,France,449.0
+ORD-0172,1024,Monitor 27inch,Electronics,3,329.0,5.0,2023-11-12,Completed,United Kingdom,937.65
+ORD-0173,1008,Wireless Mouse,Electronics,1,29.99,15.0,2023-11-12,Cancelled,United Kingdom,25.49
+ORD-0174,1005,Headphones Pro,Electronics,3,199.99,15.0,2023-07-08,Completed,United States,509.97
+ORD-0175,1035,Wireless Mouse,Electronics,3,29.99,15.0,2023-11-12,Completed,United Kingdom,76.47
+ORD-0176,1016,Standing Desk,Furniture,3,199.99,10.0,2023-04-04,Pending,United States,539.97
+ORD-0177,1020,Monitor 27inch,Electronics,4,329.0,0.0,2023-05-09,Completed,United States,1316.0
+ORD-0178,1042,Notebook Set,Stationery,4,12.5,0.0,2023-03-10,Completed,France,50.0
+ORD-0179,1033,Standing Desk,Furniture,5,449.0,15.0,2023-06-10,Completed,France,1908.25
+ORD-0180,1034,Standing Desk,Furniture,3,449.0,0.0,2023-11-03,Pending,France,1347.0
+ORD-0181,1042,Desk Lamp,Furniture,3,39.99,0.0,2023-10-11,Completed,United Kingdom,119.97
+ORD-0182,1003,Headphones Pro,Electronics,5,199.99,0.0,2023-02-10,Completed,United States,999.95
+ORD-0183,1041,Ergonomic Chair,Furniture,5,389.0,5.0,2023-11-12,Completed,United Kingdom,1847.75
+ORD-0184,1029,Ergonomic Chair,Furniture,4,389.0,0.0,2023-03-08,Completed,United States,1556.0
+ORD-0185,1009,Standing Desk,Furniture,3,449.0,0.0,2023-11-12,Cancelled,France,1347.0
+ORD-0186,1007,Ergonomic Chair,Furniture,4,389.0,0.0,2023-11-12,Pending,United States,1556.0
+ORD-0187,1047,Notebook Set,Stationery,2,12.5,0.0,2023-11-12,Cancelled,Unknown,25.0
+ORD-0188,1026,Desk Lamp,Furniture,4,39.99,5.0,2023-11-12,Completed,United States,151.96
+ORD-0189,1035,Monitor 27inch,329.0,1,329.0,0.0,2023-11-12,Unknown,Germany,329.0
+ORD-0190,1004,USB-C Hub,Electronics,3,49.99,0.0,2023-12-07,Completed,France,149.97
+ORD-0191,1044,Wireless Mouse,Electronics,4,29.99,10.0,2023-11-12,Pending,Unknown,107.96
+ORD-0192,1039,Monitor 27inch,Electronics,3,329.0,10.0,2023-11-12,Completed,Germany,888.3
+ORD-0193,1039,Standing Desk,Furniture,3,449.0,0.0,2023-11-12,Unknown,United States,1347.0
+ORD-0194,1022,Monitor 27inch,Electronics,2,329.0,5.0,2023-11-12,Pending,Unknown,625.1
+ORD-0195,1027,Headphones Pro,Electronics,3,199.99,5.0,2023-12-01,Cancelled,United States,569.97
+ORD-0196,1038,Laptop Pro 15,Electronics,5,1299.99,5.0,2023-11-12,Pending,United States,6174.95
+ORD-0197,1045,Notebook Set,Stationery,2,199.99,0.0,2023-08-11,Completed,Unknown,399.98
+ORD-0198,1046,Standing Desk,Furniture,4,449.0,15.0,2023-11-12,Unknown,United States,1526.6
+ORD-0199,1022,Mechanical Keyboard,Electronics,5,119.99,5.0,2023-06-06,Unknown,United Kingdom,569.95
+ORD-0200,1020,USB-C Hub,Electronics,5,49.99,5.0,2023-08-04,Pending,United Kingdom,237.45
