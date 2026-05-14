@@ -271,7 +271,6 @@ print(merged.groupby("country")["order_id"].value_counts().idxmax())
 print("Average order value per customer segment:")
 print(merged.groupby("segment")["revenue"].mean())
 #  Q4. Which month of 2023 had the highest total revenue?
-#      Hint: extract month from the cleaned order_date column.
 print("Month of 2023 with highest total revenue:")
 merged_2023=merged[merged["order_date"].dt.year==2023]
 print(merged_2023.groupby(merged_2023["order_date"].dt.month)["revenue"].sum().idxmax())
@@ -279,7 +278,6 @@ print(merged_2023.groupby(merged_2023["order_date"].dt.month)["revenue"].sum().i
 #  Q5. List the top 5 customers by total revenue.
 print("Top 5 customers by total revenue:")
 print(merged.groupby(["customer_id", "first_name", "last_name"])["revenue"].sum().sort_values(ascending=False).head(5))
-# Print each answer with a clear label.
 
 
 # =============================================================
