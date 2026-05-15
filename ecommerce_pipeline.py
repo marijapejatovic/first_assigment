@@ -33,16 +33,7 @@ import pandas as pd
 #       Print the shape and first 5 rows of each.
 #       Print df.info() to understand column types and nulls.
 
-orders_df = pd.read_csv("orders.csv")
-customers_df = pd.read_csv("customers.csv")
-print("Orders shape: ", orders_df.shape)
-print("First 5 rows of orders: ", orders_df.head())
-print("Orders info: ",orders_df.info())
-print("Orders nulls values ",orders_df.isnull().sum())
-print("Customers shape: ", customers_df.shape)
-print("First 5 rows of customers: ", customers_df.head())
-print("Customers info: ", customers_df.info())
-print("Customers nulls values ",customers_df.isnull().sum())
+
 #problemi u orders.csv:
 # unit_price 5null vrijednosti
 #  discount_pct 32 null vrijednosti,
@@ -174,7 +165,10 @@ class DataCleaner:
         """
         before=len(self.df)
         self.df=self.df.drop_duplicates(subset=subset)
+        print(before)
         after=len(self.df)
+        print(after)
+        print(f"Removed {before-after} duplicates.")
         return self
 
     def add_revenue_column(self,
@@ -213,11 +207,7 @@ class DataCleaner:
 #   8. report()                       (print after state)
 # Save the result to cleaned_orders.csv (no index).
 
-orders_cleaner = DataCleaner(orders_df, "orders")
-orders_clean   = (orders_cleaner.standardize_text_columns(["status", "category"]).normalize_country("country").fix_dates("order_date").fill_nulls({"unit_price": "median", "status": "Unknown", "country": "Unknown", "discount_pct":0,"order_date":"mode"}).remove_duplicates().add_revenue_column("unit_price", "quantity", "discount_pct").get())
-orders_cleaner.report() 
-orders_clean.to_csv("cleaned_orders.csv", index=False)
-print("Sačuvano: cleaned_orders.csv")
+
 
 # =============================================================
 # TASK 4 — Clean the customers dataset
@@ -229,11 +219,7 @@ print("Sačuvano: cleaned_orders.csv")
 #   - remove duplicates
 # Save to cleaned_customers.csv (no index).
 
-customers_cleaner = DataCleaner(customers_df, "customers")
-customers_clean=(customers_cleaner.standardize_text_columns(["segment"]).fill_nulls({"last_name":"Unknown", "email":"Unknown", "lifetime_value":"median()"}).remove_duplicates().get())
-customers_cleaner.report()
-customers_clean.to_csv("cleaned_customers.csv", index=False)
-print("Sačuvano: cleaned_customers.csv")
+
 
 # =============================================================
 # TASK 5 — Merge the two cleaned datasets
@@ -245,12 +231,7 @@ print("Sačuvano: cleaned_customers.csv")
 #   - How many orders have no matching customer (if any)
 # Save to merged_report.csv (no index).
 
-merged = orders_clean.merge(customers_clean, on="customer_id", how="left")
-print(f"Total rows in merged report: {len(merged)}")
-missing_customers = merged["customer_id"].isnull().sum()
-print(f"Orders with no matching customer: {missing_customers}")
-merged.to_csv("merged_report.csv", index=False)
-print("Sačuvano: merged_report.csv")
+
 
 
 
@@ -261,25 +242,13 @@ print("Sačuvano: merged_report.csv")
 #
 #  Q1. What is the total revenue per category?
 #      (sorted descending)
-print("Total revenue per category:")
-print(merged.groupby("category")["revenue"].sum().sort_values(ascending=False))
+
 
 #  Q2. Which country placed the most orders?
-print("Country with most orders:")
-print(merged.groupby("country")["order_id"].value_counts().idxmax())
 #  Q3. What is the average order value per customer segment?
-print("Average order value per customer segment:")
-print(merged.groupby("segment")["revenue"].mean())
 #  Q4. Which month of 2023 had the highest total revenue?
-#      Hint: extract month from the cleaned order_date column.
-print("Month of 2023 with highest total revenue:")
-merged_2023=merged[merged["order_date"].dt.year==2023]
-print(merged_2023.groupby(merged_2023["order_date"].dt.month)["revenue"].sum().idxmax())
 
 #  Q5. List the top 5 customers by total revenue.
-print("Top 5 customers by total revenue:")
-print(merged.groupby(["customer_id", "first_name", "last_name"])["revenue"].sum().sort_values(ascending=False).head(5))
-# Print each answer with a clear label.
 
 
 # =============================================================
@@ -287,5 +256,51 @@ print(merged.groupby(["customer_id", "first_name", "last_name"])["revenue"].sum(
 # =============================================================
 if __name__ == "__main__":
     print("Starting e-commerce pipeline...")
-    # Call your tasks here in order
+    orders_df = pd.read_csv("orders.csv")
+    customers_df = pd.read_csv("customers.csv")
+    print("Orders shape: ", orders_df.shape)
+    print("First 5 rows of orders: ", orders_df.head())
+    print("Orders info: ",orders_df.info())
+    print("Orders nulls values ",orders_df.isnull().sum())
+    print("Customers shape: ", customers_df.shape)
+    print("First 5 rows of customers: ", customers_df.head())
+    print("Customers info: ", customers_df.info())
+    print("Customers nulls values ",customers_df.isnull().sum())
+    orders_cleaner = DataCleaner(orders_df, "orders")
+    orders_clean   = (orders_cleaner.standardize_text_columns(["status", "category"])
+                  .normalize_country("country")
+                  .fix_dates("order_date")
+                  .fill_nulls({"unit_price": "median", "status": "Unknown", "country": "Unknown", "discount_pct":0})
+                  .remove_duplicates()
+                  .add_revenue_column("unit_price", "quantity", "discount_pct")
+                  .get())
+    orders_cleaner.report() 
+    orders_clean.to_csv("cleaned_orders.csv", index=False)
+    print("Sačuvano: cleaned_orders.csv")
+    customers_cleaner = DataCleaner(customers_df, "customers")
+    customers_clean=(customers_cleaner.standardize_text_columns(["segment"]).fill_nulls({"last_name":"Unknown", "email":"Unknown", "lifetime_value":"median"}).remove_duplicates().get())
+    customers_cleaner.report()
+    customers_clean.to_csv("cleaned_customers.csv", index=False)
+    print("Sačuvano: cleaned_customers.csv")
+    merged = orders_clean.merge(customers_clean, on="customer_id", how="left")
+    print(f"Total rows in merged report: {len(merged)}")
+    missing_customers = merged["first_name"].isnull().sum()
+    print(f"Orders with no matching customer: {missing_customers}")
+    merged.to_csv("merged_report.csv", index=False)
+    print("Sačuvano: merged_report.csv")
+    print("Total revenue per category:")
+    print(merged.groupby("category")["revenue"].sum().sort_values(ascending=False))
+
+    print("Country with most orders:")
+    print(merged.groupby("country")["order_id"].count().idxmax())
+    print("Average order value per customer segment:")
+    print(merged.groupby("segment")["revenue"].mean())
+    print("Month of 2023 with highest total revenue:")
+    merged_2023=merged[merged["order_date"].dt.year==2023]
+    print(merged_2023.groupby(merged_2023["order_date"].dt.month)["revenue"].sum().idxmax())
+    print("Top 5 customers by total revenue:")
+    print(merged.groupby(["customer_id", "first_name", "last_name"])["revenue"].sum().sort_values(ascending=False).head(5))
+
+
+
     print("Pipeline complete.")
